@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/Play"
+        android:layout_marginTop="96dp"
+        android:onClick="playSound"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#c83333"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/Pause"
+        android:layout_below="@+id/Play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="pauseSound"
+        android:background="#1597a6"
+        android:textSize="24sp"
+        android:paddingLeft="20dp" android:paddingRight="20dp"
+        android:textColor="#ffffff"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loop"
+        android:id="@+id/switchLoop"
+        android:layout_below="@+id/Pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"/>
+</RelativeLayout>
